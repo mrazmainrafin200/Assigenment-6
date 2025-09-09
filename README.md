@@ -185,3 +185,37 @@ console.log(name, age); // Output: Alice 25
 
 ## ✅ Summary
 - **Destructuring** => a short way to unpack values from arrays or objects into variables.
+
+----
+## 5) Explain template literals in ES6. How are they different from string concatenation?
+
+Template literals in ES6 are a new way to work with strings that provide more flexibility than traditional string concatenation. They are written using backticks (`) instead of single or double quotes.
+
+### **Features of template literals** :
+
+- String interpolation – You can embed variables and expressions directly inside ${ }.
+- Multi-line strings – No need for \n; you can write strings across multiple lines.
+- Expression evaluation – You can evaluate JavaScript expressions inside ${ }.
+
+✅**Example(concatenation)** :
+```js
+const name = "Alice";
+const age = 25;
+console.log("My name is " + name + " and I am " + age + " years old.");
+// Output: My name is Alice and I am 25 years old.
+```
+
+✅**Example(template literals)** :
+```js
+const name = "Alice";
+const age = 25;
+console.log(`My name is ${name} and I am ${age} years old.`);
+// Output: My name is Alice and I am 25 years old.
+```
+
+### Key Difference:
+- String concatenation uses + and is harder to read.
+- Template literals are cleaner, support multi-line, and allow variable interpolation directly
+
+## ✅ Summary
+- **Template literals** = backtick strings with interpolation, multi-line support, and cleaner syntax than + concatenation.
