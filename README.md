@@ -1,8 +1,8 @@
-### 1) What is the difference between `var`, `let`, and `const`?
+## 1) What is the difference between `var`, `let`, and `const`?
 
 In JavaScript, `var`, `let`, and `const` are used to declare variables, but they behave differently:
 
-#### 🔹 var
+### 🔹 var
 - **Scope**: Function-scoped.  
 - **Hoisting**: Gets hoisted (moved to the top of its scope) and initialized as `undefined`.  
 - **Redeclaration**: Can be redeclared and updated.  
@@ -46,3 +46,20 @@ const	Block-scoped	❌ No	❌ No	⚠️ (not initialized)
 
 👉 Use let when the value will change, and const when it won’t. Avoid var in modern JavaScript.
 
+
+## 2) What is the difference between `map()`, `forEach()`, and `filter()`?
+
+These three are array methods in JavaScript, but they serve different purposes:
+
+---
+
+#### 🔹 `forEach()`
+- **Purpose**: Executes a function for each element in the array.  
+- **Return Value**: ❌ Does not return a new array (always returns `undefined`).  
+- **Use Case**: When you just want to loop through items and perform side effects (like logging, updating DOM, etc.).  
+
+```js
+const numbers = [1, 2, 3];
+numbers.forEach(num => console.log(num * 2));
+// Output: 2, 4, 6
+// Returns: undefined
