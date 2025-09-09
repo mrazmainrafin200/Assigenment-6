@@ -1,3 +1,4 @@
+----
 ## 1) What is the difference between `var`, `let`, and `const`?
 
 In JavaScript, `var`, `let`, and `const` are used to declare variables, but they behave differently:
@@ -157,3 +158,30 @@ person.greet(); // Output: Hello, John
 - Arrow functions = shorter syntax for writing functions.
 - They use lexical this binding (don’t create their own this).
 - Best for callbacks & simple functions, but cannot be used as constructors.
+
+----
+## 4) How does destructuring assignment work in ES6?
+
+Destructuring assignment in ES6 allows you to extract values from arrays or properties from objects into distinct variables in a concise way. It makes code cleaner and reduces repetition.
+
+✅**Example with arrays** :
+```js
+const numbers = [1, 2, 3];
+const [a, b, c] = numbers;
+console.log(a, b, c); // Output: 1 2 3
+```
+
+✅**Example with objects** :
+```js
+const person = { name: "Alice", age: 25 };
+const { name, age } = person;
+console.log(name, age); // Output: Alice 25
+```
+
+### Key Points:
+- Works with both arrays and objects.
+- Supports default values.
+- Allows nested destructuring.
+
+## ✅ Summary
+- **Destructuring** => a short way to unpack values from arrays or objects into variables.
