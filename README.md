@@ -219,3 +219,4 @@ console.log(`My name is ${name} and I am ${age} years old.`);
 
 ## ✅ Summary
 - **Template literals** = backtick strings with interpolation, multi-line support, and cleaner syntax than + concatenation.
+
