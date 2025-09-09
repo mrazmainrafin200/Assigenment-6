@@ -9,8 +9,8 @@ In JavaScript, `var`, `let`, and `const` are used to declare variables, but they
 - ⚠️ Can cause unexpected bugs because it's accessible even before it's declared.
 
 ```js
-var name = "Azmain";
-var name = "Rafin"; // ✅ Redeclaration allowed
+var city = "Dhaka";
+var city = "Chittagong"; // ✅ Redeclaration allowed
 ```
 
 ### 🔹 let
