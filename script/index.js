@@ -231,4 +231,4 @@ function loadTreesByCategory(id, el) {
 
 // initial load
 loadCategories();
-loadAllTrees();  // ✅ show all plants by default
+loadAllTrees();
